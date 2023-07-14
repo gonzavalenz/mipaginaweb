@@ -1,0 +1,9 @@
+use mipaginaweb;
+
+CREATE TABLE usuarios (
+  username VARCHAR(50) PRIMARY KEY,
+  contrasena VARCHAR(255),
+  pais_id INT,
+  email VARCHAR(100),
+  FOREIGN KEY (pais_id) REFERENCES paises(id)
+);

@@ -1,0 +1,9 @@
+use mipaginaweb;
+
+CREATE TABLE mensajes (
+  id_mensaje INT AUTO_INCREMENT PRIMARY KEY,
+  mensaje TEXT,
+  username VARCHAR(50),
+  fecha_hora DATETIME,
+  FOREIGN KEY (username) REFERENCES usuarios(username)
+);
